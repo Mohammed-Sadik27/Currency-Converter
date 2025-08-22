@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.png">
+</head>
+<body>
+    <div class="currency_Converter_container">
+        <h1>Currency Converter</h1>
+        <input type="number" name="amount" id="amount_entry" placeholder="Enter amount" required >
+        <div class="Currency">
+            <div class="from_currency">
+                <img src="https://flagcdn.com/w640/eu.png" alt="">
+                <select name="from_currency" id="from_currency" onchange="UpdateFlag('From')">
+                    
+
+                </select>
+            </div>
+            <div class="converter">
+                <img src="images/loop.png" alt="">
+            </div>
+            <div class="to_currency">
+                <img src="https://flagcdn.com/w640/us.png" alt="">
+                <select name="to_currency" id="to_currency" onchange="UpdateFlag('To')">
+
+                </select>
+            </div>
+        </div>
+        <div class="result">
+            <p id="result_text">0 € = 0 $</p>
+        </div>
+        <button id="convert_button">Convert</button>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

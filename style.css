@@ -1,0 +1,129 @@
+/* General styles */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient(135deg,#101828,#2A2F4F,#4A3C72);
+    
+    height:100vh;
+    width:100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+/* End General Styles*/
+
+/* Container Styles*/
+.currency_Converter_container{
+    background:url('images/bg.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px;
+    position:absolute;
+    justify-content: center;
+    align-items: center;
+    top:0;
+    left:20%;
+    transform: translate(50%,20%);
+    width:30vw;
+    height:70vh;
+    background-color: #101828;
+    border-radius:10px;
+    z-index:1px;
+}
+.currency_Converter_container h1{
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+    margin:30px 0px;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:2em;
+}
+.currency_Converter_container input[type="number"]{
+    width:100%;
+    padding:10px;
+    border-radius:5px;
+    border:none;
+    font-size:1.2em;
+    margin-bottom:10px;
+    justify-content: center;
+    align-items:center;
+    background-color:#1D293D;
+    outline: none;
+    color:white;
+    text-align: center;
+    transition: outline 0.3s ease;
+}
+.currency_Converter_container input[type="number"]:focus{
+    outline: 2px solid yellow;
+}
+.Currency{
+    display:flex;
+    flex-direction:row;
+    gap:35px;
+    justify-content: center;
+    align-items: center;
+    margin-top:50px;
+}
+.from_currency,
+.to_currency{
+    justify-content: center;
+    align-items:center;
+    display: flex;
+    gap:8px;
+}
+.from_currency img,
+.to_currency img{
+    border-radius:100%;
+    width:35px;
+    height:35px;
+}
+.converter img{
+    width:34px;
+    height:34px;
+    background-color:yellow;
+    border-radius: 100%;
+    cursor:pointer;
+}
+.from_currency select,
+.to_currency select{
+    background-color:#0F172B;
+    border: none;
+    padding: 5px;
+    font-size: 1.1em;
+    color: rgb(196, 186, 186);
+    cursor: pointer;
+}
+.result{
+    margin-top: 10vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.5em;
+}
+#convert_button{
+    background-color: yellow;
+    border-radius: 30px;
+    border: none;
+    margin-top: 20px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#convert_button:hover{
+    background-color: orange;
+}
+/* End Container Styles*/
